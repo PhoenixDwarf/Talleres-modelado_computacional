@@ -1,4 +1,18 @@
 
+
+---
+
+
+- **x**: Diccionario de variables binarias de PuLP:
+x[i, j] = 1 si el CAC j es atendido por el depósito i, 0 en caso contrario.
+
+- **y**: Diccionario de variables binarias de PuLP:
+y[i] = 1 si el depósito i es operado, 0 en caso contrario.
+
+- **problema**: Objeto de modelo de optimización de PuLP (LpProblem).
+
+---
+
 - **cacs**: DataFrame de pandas con la información de los CACs (Centros de Acopio Consolidados).
 
 - **depositos**: DataFrame de pandas con la información de los depósitos candidatos.
@@ -42,14 +56,3 @@
 - **distancia**: Diccionario: clave = (depósito, CAC), valor = distancia geodésica en km entre ambos.
 
 - **costo_transporte**: Diccionario: clave = (depósito, CAC), valor = costo de transportar la producción del CAC al depósito.
-
----
-
-
-- **x**: Diccionario de variables binarias de PuLP:
-x[i, j] = 1 si el CAC j es atendido por el depósito i, 0 en caso contrario.
-
-- **y**: Diccionario de variables binarias de PuLP:
-y[i] = 1 si el depósito i es operado, 0 en caso contrario.
-
-- **problema**: Objeto de modelo de optimización de PuLP (LpProblem).
