@@ -1,3 +1,5 @@
+$(i, j)$, es decir, (depósitos, CACs)
+
 **Depositos**: lista con los nombres de los 4 depósitos candidatos.
 
 **Centros**: lista con los CACs (centros de acopio).
